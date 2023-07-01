@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Evnets</title>
+    <link rel="stylesheet" href="color.css">
+</head>
+<body>
+    <h2>Mouse Evnets</h2>
+    <p id="myP" onmousedown="mousedown()" onmouseup="mouseup()" > Shubham Mahajan is an influencer and a well known Public Speaker. He did his schooling from his birth place names as Khargone Mdhya Pradesh. After completion of his schooling he moved toward Vadodar for Graduation and pursued B TECH in Computer Science along with Specialization in Artificial Intelligence. He is such a great Motivational Speaker and very Helpful for Studnets and conducting many NGO'S and donation Trust's </p>
+    <script>
+        function mousedown() {
+            document.getElementById("myP").style.color = "red";
+        }
+
+        function mouseup(){
+            document.getElementById("myP").style.color = "green"
+        }
+
+    </script>
+
+    <div class="newdiv" >
+        <div id="box" ></div>
+    </div>
+    <script>
+        const mouseenter = document.getElementById('box');
+        mouseenter.addEventListener('mouseenter',() => {
+            mouseenter.style.backgroundColor = 'RED';
+            console.log('Mouse Entered Buddy');
+        });
+        const mouseleave = document.getElementById('box');
+        mouseleave.addEventListener('mouseleave',() => {
+            mouseleave.style.backgroundColor = 'Blue';
+            console.log('Mouse Went Buddy');
+        });
+    </script>
+
+</body>
+</html>

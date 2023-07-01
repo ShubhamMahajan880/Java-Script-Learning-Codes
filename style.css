@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: darkkhaki;
+}
+
+.main-div{
+width: 100vw;
+height: 100vh;
+display: grid;
+place-items: center;
+}
+
+#box{
+    width: 100px;
+    height: 100px;
+    background: gold;
+
+}  

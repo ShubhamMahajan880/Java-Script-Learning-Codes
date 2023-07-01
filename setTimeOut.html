@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Time Out</title>
+</head>
+<body>
+    <h1>How SetTimeOutt Command Works</h1>
+    <div class="main-div" >
+        <div>
+            <h1>Would you like to know my name ?</h1>
+            <p id="showMyName" > </p>
+            <br>
+            <button  id="button">Click to Show</button>
+        </div>
+    </div>
+    <script>
+        const myname = document.querySelector('#showMyName');
+        const button = document.querySelector('#button');
+
+        const showMyName = () => {
+            myname.innerHTML = "Loading.......⏲️"
+            setTimeout(() => {
+                myname.innerHTML = "Shubham_Mahajan"
+            },500)
+        }
+        button.addEventListener('click',showMyName);
+   </script>

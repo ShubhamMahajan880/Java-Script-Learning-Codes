@@ -1,0 +1,25 @@
+// Modern javascript 
+// ECMAScript - 2015 is knows as ES6
+// LET vs CONST vs VAR
+//var => Function Scope
+// let and Const => Block Scope
+
+var myName = "Shubham Developer";
+console.log(myName);//Shubham Developer
+myName = "I am a web developer";
+console.log(myName);//Shubham Developer
+
+let myName = "Shubham Developer";
+console.log(myName);
+myName = "I am a web developer";
+console.log(myName);
+
+// var ka scope globally hota he jabki let ka scope kevl curely brackets k ander hota h
+// in case of CONST there will not any change in entire code 
+
+//Array 1) Traversal in Array :- If we want to get single data at a time 
+                            //   If we want to change the data
+                            
+var Shubham = ['Frontend','backend','Fullstack','100000','500000'];
+console.log(Shubham[0]);
+

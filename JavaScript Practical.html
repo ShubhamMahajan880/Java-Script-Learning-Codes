@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding of set & Get Functions in Js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="heading" > We are Learning About JavaScript Child, Nodes and Other Elements</h1>
+    <div class="Understading of different Child and class" >
+        <div class="ChildOne" >
+            <p>I am Child one</p>
+        </div>
+        <div class="ChildTwo" >
+            <p>I am another Second Child</p>
+        </div>
+        <div class="ChildThree" >
+            <p id="first" >And I am Child Three</p>
+            <p id="Second" > There is one more child in this class Third Child</p>
+        </div>
+    </div>
+    <!-- <div class="Button" >
+        <a href="#" class="Button" onclick="callingfunction()" >By clicking that icon </a>
+
+    </div>
+    <script>
+        const callingfunction = () => {
+            alert('Hey,What are you going to do'); 
+        }
+    </script> -->
+<!--     
+    <div class="Learning" >
+<a href="#" class="thirdway" >
+    ANother method for calling a function
+    </a> 
+        </div>    
+<script>
+    const thirdway = document.getElementById('thirdway');
+    thirdway.onclick = function(){
+        alert('You are learning Method - 3 for calling a alert');
+    }
+    </script> -->
+<!-- 
+    <div class="Button" >
+        <a href="#" class="Button" id="Fourthway" > 4th Method Here </a>
+    </div>
+    <script>
+        const Fourthway = documen.getElementById('Fourthway');
+
+        const checkEvent = () => {
+            alert('We are learning JavaScript from Basic to Advance Level');
+            console.log(event);
+            console.log(event.target);
+            console.log(event.type);
+        }
+        Fourthway.addEventListener('click',checkEvent);
+        // To get all the information about Event, We can use the event Object
+    </script> -->
+
+    <p id="myP" onmousedown="mousedown()" onmouseup="mouseup()" > Shubham Mahajan is an influencer and a well known Public Speaker. He did his schooling from his birth place names as Khargone Mdhya Pradesh. After completion of his schooling he moved toward Vadodar for Graduation and pursued B TECH in Computer Science along with Specialization in Artificial Intelligence. He is such a great Motivational Speaker and very Helpful for Studnets and conducting many NGO'S and donation Trust's </p>
+    <script>
+        function mousedown() {
+            document.getElementById("myP").style.color = "red";
+        }
+
+        function mouseup(){
+            document.getElementById("myP").style.color = "green"
+        }
+
+    </script>
+
+    <div class="main-div" >
+        <div id="box" ></div>
+    </div>
+    <script>
+        const mouseenter = document.getElementById('box');
+        mouseenter.addEventListener('mouseenter',() => {
+            mouseenter.style.backgroundColor = 'RED';
+            console.log('Mouse Entered Buddy');
+        });
+        const mouseleave = document.getElementById('box');
+        mouseleave.addEventListener('mouseleave',() => {
+            mouseleave.style.backgroundColor = 'Blue';
+            console.log('Mouse Went Buddy');
+        });
+
+
+    </script>
+
+
+</body>
+</html>

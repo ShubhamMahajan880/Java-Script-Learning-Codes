@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClearInterval</title>
+</head>
+<body>
+    <h1>Understanding of ClearInterval code and It's Working</h1>
+    <div class="main-div" >
+        <div>
+            <p>Book your seat when it will reach to 100</p>
+            <br>
+            <button id="btn" >Click To Book Your Seat </button>        
+            <button id="btn2" >Stop Here</button>
+        </div>
+    </div>
+    <script>
+        const stopNum = document.querySelector('p');
+        const btn = document.querySelector('#btn');
+        const btn2 = document.querySelector('#btn2');
+        let timeRef;
+        let num = 0;
+    
+        const showMyName = () => {
+            stopNum.innerHTML = "Loading......🙂"
+            timeRef =  setInterval(() => {
+                stopNum.innerHTML = `${num}`;
+                num++;
+            },1000 )
+        }
+        btn.addEventListener('click',showMyName)
+        stopInterval.addEventListener('click',() => {
+            clearInterval(timeRef);
+        })
+    </script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyBoard Events Understanding</title>
+</head>
+<body>
+    <div class="main-div" >
+        <div>
+        <br>
+            <p>A function is triggered when the user is pressing a key in the input field.</p>
+            <br>
+            <input type="text" onkeypress="keypress()" onkeydown="keydown()" onkeyup="keyup()" >
+        </br>
+        <p id="keys"></p>
+        </div>
+    </div>
+
+    <script>
+         const keypress= () => {
+            document.getElementById("keys").innerHTML = `you presses ${event.key} and its code is ${event.code}`;
+        }
+    </script>
+
+    <script>
+            const keydown = () => {
+                document.getElementById('keys').innerHTML = 'Key is down';
+            }
+            const keyup = () => {
+                document.getElementById('keys').innerHTML = 'Key is up';
+            }
+
+        
+    </script>
+
+</body>
+</html>

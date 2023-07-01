@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetInterval</title>
+</head>
+<body>
+    <h1>SetInterval Code Understanding and Usable Format</h1>
+    <div class="main-div" >
+        <div>
+            <p>Book your seat when it will reach to 100</p>
+            <br>
+            <button id="btn" >Click To Book Your Seat </button>        
+        </div>
+    </div>
+    <script>
+        const stopNum = document.querySelector('p');
+        const btn = document.querySelector('#btn');
+        let num = 0;
+        const showMyNum = () => {
+            stopNum.innerHTML = "Loading......🙂"
+            setInterval(() => {
+                stopNum.innerHTML = `${num}`;
+                num++;
+            },1000 )
+        }
+        btn.addEventListener('click',showMyNum)
+    </script>
+        
+</body>
+</html>

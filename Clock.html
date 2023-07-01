@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLock Code Presentation</title>
+</head>
+<body>
+    <h2>We are Learning Web Development</h2>
+    <p id="demo" >We are Working time and Date Concepts</p>
+    <!-- <script>
+        (function(){
+    setInterval(() => {
+        var d = new Date().toLocaleTimeString();
+        document.getElementById("demo").innerHTML = d;
+    },1000)
+})();
+    </script> -->
+    <script>
+        var d = new Date().toLocaleTimeString();
+        document.getElementById("demo").innerHTML = d; // 11:28:10 PM
+
+        var d = new Date().toLocaleDateString();
+        document.getElementById("demo").innerHTML = d; // 6/27/2023
+
+        var d = new Date().toLocaleString();
+        document.getElementById("demo").innerHTML = d; // 6/27/2023, 11:28:10 PM
+
+
+
+    </script>
+    
+
+</body>
+</html>

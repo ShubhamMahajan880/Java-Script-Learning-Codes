@@ -1,0 +1,272 @@
+console.log('Shubham Mahajan');
+
+
+
+// 2)  Values and Variables in JavaScript:- 
+var myName = 'Shubham is sexy';
+console.log(myName);
+
+var myAge = 21;
+console.log(myAge);
+
+var _myChest = 24;
+console.log(_myChest);
+
+var _1my__Name = 'BooBs';
+console.log(_1my__Name);
+
+var $myArmy = "MahajanConsultancy";
+console.log($myArmy);
+
+
+
+// 3) DataTypes in JavaScript :- 
+var myName = 'Shubham is sexy';
+console.log(myName);
+
+// type of Operator
+console.log(typeof(myName));//string
+
+var myAge = 21;
+console.log(myAge);
+console.log(typeof(myAge));//number
+
+var iAmShubham = true;
+console.log(iAmShubham);//true
+console.log(typeof(iAmShubham));//boolean
+
+// var Shubham = false;
+console.log(typeof(Shubham));//undefined
+
+console.log(10 + "20");//1020 (number and String cannot be add it can be concatinated as different different datatyeps)
+console.log(9 - "5");// 4 (Here is a "BUG" because in case of substraction it is performing between number & string )
+console.log("Java" + "Script"); //JavaScript
+console.log("" + "");//<empty string>
+console.log(" " + " ");//  Printing vacant space due to space between appostrophies. Appostrophies k pehle ya bich me space he to vo space print bhi hogi
+console.log(" " + 0);//0
+console.log("Shubham" - "Mahajan"); //NaN (Not a Number)
+console.log("true" + "true");//truetrue
+
+/* In JavaScript :- 
+   1 - True
+   0 - False
+*/
+console.log(true + true); //2
+console.log(true + false);// 1
+console.log(false + true);// 1
+console.log(false - true);// -1
+
+
+
+// Intrview Question 4.1) -  What is difference between null & undefined
+var iAmUseless = null;
+console.log(iAmUseless); // null (When we assign null value, then null datatype appears)
+
+var Frontenddevelopment;
+console.log(Frontenddevelopment);// undefined (When we are not defining any value and undefined is not only value while it is a datatype also)
+
+console.log(typeof(iAmUseless));// object (There is no any datatype names as OBEJCT , so there is 2nd "BUG" in javaScript)
+console.log(typeof(Frontenddevelopment));// undefined
+
+// Intrview Question 4.2) -  What is NaN:- 
+
+var myMobileNumber = 9669999880;
+var myName = "Shubham Mahajan";
+console.log(myMobileNumber);//9669999880
+console.log(myName);//Shubham Mahajan
+
+console.log(isNaN(myMobileNumber));//false
+console.log(isNaN(myName));//true
+
+if(isNaN(myName)){
+    console.log("Please insert a valid mobile number");
+
+    console.log(NaN === NaN);//false
+    console.log(NaN == NaN);
+
+
+
+    // #4) Expressions & Operators in JavaScript:-
+    // 4.1 - Assignment Operator:- 
+    // An assignment operator assign a value to its left operand
+    // Based on the value of its right operand
+    // The Simple Assignment Operator is equal
+
+    var x = 5;
+    var y = 5;
+
+    console.log("is both the x and y are equal or not" + x == y );//false
+    console.log( x == y );//true
+    
+    // 4.2 - Arithmatic Operator:- 
+    // An Arithmatic operator takes numerical values
+    // either (Literal or Variable) as their operand
+    // Returns a sigle numerical value 
+    console.log(3+3); // 6
+    console.log(10-5);// 5
+    console.log(20/5);// 4
+    console.log(5*6);// 3
+    console.log(" Remainder Operator " + 81%8 );// 1
+
+    // Increment & Decrement Operators:- 
+    // Operator: X++ or ++X or X-- or --X
+    // If used postfix, with operator after operand (ex:-, x++),
+    // the increment operator increments and returns the value before incrementing
+    // if used prefix, with operator before operand (for example, ++x)
+    // the increment operator increments and returns the value after incrementing 
+
+    var num = 45;
+    var newnum = num++;     
+    console.log(num);// 46
+    console.log(newnum++);// 45
+
+    var newnum0 = newnum0++ + 5;// (num0 + 5) 
+    console.log(newnum0);
+// postfix :- x ++ (Jo hoga vaad me dekha jayga abhi to jo give value h vhi consider kro)
+var num1 = 15;
+var newnum1 = ++num1;
+console.log(num1);//16
+console.log(newnum1);//16
+var newnum2 = ++num1 + 5;
+console.log(newnum2);
+
+    // 4.3 - Comparision Operator:- 
+    // a comparision operator compares its operand and returns a logical value based on wheather the comparision is true
+
+    var a = 30;
+    var b = 10;
+    //Equal Operator (==)
+    console.log(a == b);// false
+
+    //not equal to (!=)
+    console.log(a != b);//true
+
+    //Greater than (>)
+    console.log(a > b)//true
+
+    //Greater than or equal to (>=)
+    console.log(a >= b);//true
+
+    //Less than (<)
+    console.log(a < b );// false
+
+    // Less than or equal to (<=)
+    console.log(a <= b);// false
+
+
+    // 4.4 - Logical Operator:- 
+    // Logical Operators are typically used with Boolean (Logical) values;
+    // when they are, they return a Boolean value .
+
+    var c = 30;
+    var d = -20;
+
+    
+    
+    //Logical AND (&&)
+    // The logical AND (&&) operator (logical Conjuction) for a
+    // set of operands is true if and only if all of its operands are true
+    
+    console.log(c>d && d>0 && d<0);//false
+
+    // Logical OR (||)
+    // The logical OR (||) operator (logical Disjunction) for a
+    // set of operands is true if and only if one or more  of its operand are true.
+
+    console.log((c>d) || (d>0) || (d<0));//true
+
+     // Logical NOT (!)
+    // The logical NOT (!) operator (logical complement,negation) 
+    // It takes truth to falsity and take vice versa.
+
+    console.log(((a>0) || (b>0)))//true
+    console.log(!((a>0) || (b>0)))//false
+
+    console.log(false)//false
+    console.log(!false)//true
+
+    console.log(true);//true
+    console.log(!true);//false  
+
+
+    // 4.5 - String Concatenation Operator:- 
+    // The Concatenation Operators (+) concatenates two string values together
+    // returning another string that is the union of the two operand String 
+
+    console.log("Hii Shubham");//Hii Shubham
+    console.log("Hii" + "Shubh");//HiiShubh
+    console.log("Hii " + "Shubh");//Hii Shubh
+
+    var myName = "Vitthal";
+    console.log(myName + " Girdhar" + " Mahajan");//Vitthal Girdhar Mahajan
+
+//    Question & Answers  
+//4.6 - Exponantiation or Power Opertor
+console.log(3**3); //27
+console.log("Shubham " + 880  )//Shubham 880
+// Que - 3:- Swap the values using variables
+var a = 5;
+var b = 10;
+
+// i want that a = 10, b = 5;
+var c = b;
+console.log(c);// c = 10
+b = a;
+console.log(b);// b = 5
+a = c;
+console.log(a);// a = 10
+console.log("the value of a is :- " + a);//the value of a is :- 10
+console.log("the value of b is :- " + b);//the value of b is :- 5
+
+//Que - 4:- Swap the values by using variables
+
+var c = 5;
+var d = 10;
+
+// I want swapped values as :- c = 10, d = 5
+c = c + d;
+console.log(c)// c=15
+d = c - d;//d = 5
+console.log(d);
+c  = c - d;
+console.log(c);// c = 10
+
+console.log("the value of a is :- " + c);//the value of a is :- 10
+console.log("the value of a is :- " + d);//the value of a is :- 5
+
+// 3) Interview Question :- Difference between double and tripple equl to 
+var num1 = 5;
+var num2 = '5';
+console.log(typeof(num1));//number
+console.log(typeof(num2));//string
+console.log(num1 == num2);// True   ("In case of double equal to (==) it always checks values only ")
+console.log(num1 === num2);// False ("in case of tripple equal to (===) it checks value as well as Datatype also")
+
+
+//4.6 - Conditional (Ternary) Operator:- 
+// The Conditional (Ternary) Operator is the only javascript operator that takes three operand
+
+var umr = 17;
+if(umr >= 18){
+    console.log("Then you can give vote");
+}
+else{
+    console.log("You are not eligible for voting");
+}
+//You are not eligible for voting
+
+var age  = 21;
+console.log((age >= 18) ? "You can vote bro" : "You cannot give vote as your not eligible for voting");
+// You can vote bro
+
+
+
+
+
+
+
+
+
+
+
+}
